@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #FAF8F6 0%, #FAF8F6 70%, #F3EDE7 30%, #F3EDE7 100%);
+    font-family: 'Epilogue';
+}
+
+main {
+    margin: 20px auto;
+    width: 75%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#btn1 {
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    background-color: #FAF8F6;
+    cursor: pointer;
+}
+
+#btn1:hover {
+    color: #FAF8F6;
+    background-color: #1b2944;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+#sol {
+    width: 40rem;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: -1px;
+}
+
+#marketing {
+    width: 22rem;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    padding: 30px 0;
+    color: #49566D;
+}
+
+.hero {
+    position: relative;
+    right: 11rem;
+    bottom: 3rem;
+    z-index: -1;
+}
+
+#path {
+    position: relative;
+    left: 19rem;
+}
+
+#btn2 {
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #1b2944;
+    color: #FAF8F6;
+    cursor: pointer;
+}
+
+#btn2:hover {
+    background: linear-gradient(to right, #A060FF, #CB30E3, #FFA84E);
+}
+
+.features {
+    padding: 40px 0;
+}
+
+.companies,
+.languages {
+    margin-bottom: 2rem;
+}
+
+.features h2 {
+    font-size: 48px;
+    line-height: 56px;
+    position: relative;
+    right: 5rem;
+}
+
+.features p {
+    color: #49566D;
+    position: relative;
+    right: 5rem;
+}
+
+article {
+    height: 73.5vh;
+    background-color: #1b2944;
+    background-image: url("assets/pattern-blur.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    color: #FAF8F6;
+}
+
+.jeremy img {
+    padding: 0 120px;
+    position: relative;
+    bottom: 3rem;
+}
+
+.its-work {
+    width: 50%;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#work {
+    margin: 5rem 0 2.5rem;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.2px;
+}
+
+#text {
+    width: 20rem;
+    margin: 3rem 0;
+}
+
+.pattern {
+    position: relative;
+    top: 10rem;
+    right: 4rem;
+}
+
+footer {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% auto;
+    color: #49566D;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.fa {
+    color: #1b2944;
+    padding: 3px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+.fa-facebook {
+    background: #1b2944;
+    color: #ffffff;
+}
+
+/* Media Queries  for tablet */
+@media (min-width: 600px) and (max-width: 899px) {
+    main {
+        width:85%;
+        /* background: blue; */
+    }
+    section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+ .features {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: center;
+}
+.companies,
+.languages {
+    margin:0 8rem;
+}
+.hero{
+    position: relative;
+    right: 17rem;
+} 
+
+}
